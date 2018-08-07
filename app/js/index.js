@@ -3,8 +3,8 @@ window.HELP_IMPROVE_VIDEOJS = false;
 
 function VideoPlayer() {
   var videoElem = document.createElement('VIDEO');
-  videoElem.setAttribute('src', './app/img/MB_App_hdfc_empty_video.mp4');
-  //videoElem.setAttribute('src', './app/img/10t_render.mp4');
+  //videoElem.setAttribute('src', './app/img/MB_App_hdfc_empty_video.mp4');
+  videoElem.setAttribute('src', './app/img/imperia_flight.mp4');
   videoElem.setAttribute('class', 'video-js vjs-fluid');
   videoElem.setAttribute('webkit-playsinline', '');
   videoElem.setAttribute('playsinline', '');

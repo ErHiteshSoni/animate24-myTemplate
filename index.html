@@ -1,0 +1,42 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Video</title>
+	<link rel="stylesheet" href="app/css/reset.css">
+	<link href="//vjs.zencdn.net/5.19/video-js.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="app/css/main.css">
+</head>
+
+<body style="text-align: center">
+<div id="videoPlayerWrapper" class="b-video-player-wrapper">
+	<div id="textAnimationBlock" class="b-text-animation">
+		<div class="charlie" data-animations="greeting" data-times="0" id="greeting">
+			<span>Hi</span>
+			<span>Abhijeet</span>
+		</div>
+
+		<div class="charlie" data-animations="animate-image" data-times="5.3" id="animate2">
+			<div id="frame">
+				<div id="photo"></div>
+			</div>
+			<div id="photoName">Abhijeet</div>
+		</div>
+
+		<!--<div class="charlie" data-animations="animate-image" data-times="5.3" id="photo"></div>-->
+		<!--<div class="charlie" data-animations="animate-image" data-times="5.3" id="photoName">Abhijeet</div>-->
+		<div class="charlie" data-animations="animate-name1,animate-name2" data-times="33,36" id="name">Abhijeet</div>
+	</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+<script src="//vjs.zencdn.net/5.19/video.min.js"></script>
+<script src="app/js/charlie.js"></script>
+<script src="app/js/index.js"></script>
+</body>
+
+</html>

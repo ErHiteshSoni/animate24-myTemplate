@@ -429,6 +429,154 @@ h1 {
   -webkit-animation: greeting 3.5s linear;
           animation: greeting 3.5s linear; }
 
+@-webkit-keyframes animate3-1 {
+  from {
+    -webkit-transform: translate(-35%, 60%);
+            transform: translate(-35%, 60%);
+    -webkit-filter: blur(5px);
+            filter: blur(5px); }
+  to {
+    -webkit-transform: translate(5%, 2%);
+            transform: translate(5%, 2%);
+    -webkit-filter: blur(0);
+            filter: blur(0); } }
+
+@keyframes animate3-1 {
+  from {
+    -webkit-transform: translate(-35%, 60%);
+            transform: translate(-35%, 60%);
+    -webkit-filter: blur(5px);
+            filter: blur(5px); }
+  to {
+    -webkit-transform: translate(5%, 2%);
+            transform: translate(5%, 2%);
+    -webkit-filter: blur(0);
+            filter: blur(0); } }
+
+@-webkit-keyframes animate3-2 {
+  from {
+    -webkit-transform: translate(5%, 2%);
+            transform: translate(5%, 2%); }
+  to {
+    -webkit-transform: translate(3%, -30%);
+            transform: translate(3%, -30%); } }
+
+@keyframes animate3-2 {
+  from {
+    -webkit-transform: translate(5%, 2%);
+            transform: translate(5%, 2%); }
+  to {
+    -webkit-transform: translate(3%, -30%);
+            transform: translate(3%, -30%); } }
+
+@-webkit-keyframes animate3-3 {
+  from {
+    -webkit-transform: translate(3%, -30%);
+            transform: translate(3%, -30%); }
+  to {
+    -webkit-transform: translate(-7%, 40%);
+            transform: translate(-7%, 40%); } }
+
+@keyframes animate3-3 {
+  from {
+    -webkit-transform: translate(3%, -30%);
+            transform: translate(3%, -30%); }
+  to {
+    -webkit-transform: translate(-7%, 40%);
+            transform: translate(-7%, 40%); } }
+
+@-webkit-keyframes animate3-4 {
+  from {
+    -webkit-transform: translate(-7%, 40%);
+            transform: translate(-7%, 40%); }
+  to {
+    -webkit-transform: translate(-10%, 110%);
+            transform: translate(-10%, 110%); } }
+
+@keyframes animate3-4 {
+  from {
+    -webkit-transform: translate(-7%, 40%);
+            transform: translate(-7%, 40%); }
+  to {
+    -webkit-transform: translate(-10%, 110%);
+            transform: translate(-10%, 110%); } }
+
+@-webkit-keyframes animate3-5 {
+  from {
+    -webkit-transform: translate(-10%, 110%);
+            transform: translate(-10%, 110%); }
+  to {
+    -webkit-transform: translate(5%, 110%);
+            transform: translate(5%, 110%); } }
+
+@keyframes animate3-5 {
+  from {
+    -webkit-transform: translate(-10%, 110%);
+            transform: translate(-10%, 110%); }
+  to {
+    -webkit-transform: translate(5%, 110%);
+            transform: translate(5%, 110%); } }
+
+@-webkit-keyframes animate3-6 {
+  from {
+    -webkit-transform: translate(5%, 110%);
+            transform: translate(5%, 110%); }
+  to {
+    -webkit-transform: translate(2%, 183%);
+            transform: translate(2%, 183%); } }
+
+@keyframes animate3-6 {
+  from {
+    -webkit-transform: translate(5%, 110%);
+            transform: translate(5%, 110%); }
+  to {
+    -webkit-transform: translate(2%, 183%);
+            transform: translate(2%, 183%); } }
+
+@-webkit-keyframes animate3-7 {
+  from {
+    -webkit-transform: translate(2%, 183%);
+            transform: translate(2%, 183%); }
+  to {
+    -webkit-transform: translate(0%, 350%) scale(2);
+            transform: translate(0%, 350%) scale(2); } }
+
+@keyframes animate3-7 {
+  from {
+    -webkit-transform: translate(2%, 183%);
+            transform: translate(2%, 183%); }
+  to {
+    -webkit-transform: translate(0%, 350%) scale(2);
+            transform: translate(0%, 350%) scale(2); } }
+
+.animate3-1 {
+  -webkit-animation: animate3-1 1.05s ease-out;
+          animation: animate3-1 1.05s ease-out; }
+
+.animate3-2 {
+  -webkit-animation: animate3-2 0.65s ease-out;
+          animation: animate3-2 0.65s ease-out; }
+
+.animate3-3 {
+  -webkit-animation: animate3-3 1.73s linear;
+          animation: animate3-3 1.73s linear; }
+
+.animate3-4 {
+  -webkit-animation: animate3-4 0.75s linear;
+          animation: animate3-4 0.75s linear; }
+
+.animate3-5 {
+  -webkit-animation: animate3-5 0.2s linear;
+          animation: animate3-5 0.2s linear; }
+
+.animate3-6 {
+  -webkit-animation: animate3-6 1s linear;
+          animation: animate3-6 1s linear; }
+
+.animate3-7 {
+  -webkit-animation: animate3-7 0.45s ease-in;
+          animation: animate3-7 0.45s ease-in; }
+
 @-webkit-keyframes animate-end {
   from {
     opacity: 1; }

@@ -3,7 +3,7 @@ window.HELP_IMPROVE_VIDEOJS = false;
 
 function VideoPlayer() {
   var videoElem = document.createElement('VIDEO');
-  //videoElem.setAttribute('src', './app/img/MB_App_hdfc_empty_video.mp4');
+  //videoElem.setAttribute('src', './app/img/imperia_flight.mp4');
   videoElem.setAttribute('src', './app/img/_-Main Composition_low quality.mp4');
   videoElem.setAttribute('class', 'video-js vjs-fluid');
   videoElem.setAttribute('webkit-playsinline', '');
@@ -86,17 +86,17 @@ VideoPlayer.prototype.init = function() {
   //To disable all seeking replace the if statements from the next
   //two functions with myPlayer.currentTime(currentTime);
 
-  // self.myPlayer.on('seeking', function(event) {
-  //   if (currentTime < self.myPlayer.currentTime()) {
-  //     self.myPlayer.currentTime(currentTime);
-  //   }
-  // });
-  //
-  // self.myPlayer.on('seeked', function(event) {
-  //   if (currentTime < self.myPlayer.currentTime()) {
-  //     self.myPlayer.currentTime(currentTime);
-  //   }
-  // });
+  self.myPlayer.on('seeking', function(event) {
+    if (currentTime < self.myPlayer.currentTime()) {
+      self.myPlayer.currentTime(currentTime);
+    }
+  });
+
+  self.myPlayer.on('seeked', function(event) {
+    if (currentTime < self.myPlayer.currentTime()) {
+      self.myPlayer.currentTime(currentTime);
+    }
+  });
   self.myPlayer.on('ended', function() {
 
     self.myPlayer.posterImage.show();

@@ -330,7 +330,8 @@ h1 {
   }
 }
 .animate-image1 {
-  animation: animate-image1 2.1s cubic-bezier(.55,.55,.55,.55);
+  //animation: animate-image1 2.1s cubic-bezier(.55,.55,.55,.55);
+  animation: animate-image1 2.1s cubic-bezier(0.15,0,1,1);
 }
 
 @keyframes animate-image2 {

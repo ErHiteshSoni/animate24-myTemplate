@@ -156,8 +156,10 @@ h1 {
 //----------------------------//
 #greeting{
   position: absolute;
-  top:54%;
-  left: 0;
+  top:12%;
+  //top:54%;
+  //left: 0;
+  left: -5%;
   font-size: 48px;
   font-weight: 600;
   color: #636669;
@@ -389,6 +391,18 @@ h1 {
 //  animation: greeting 3.5s linear;
 //}
 
+//@keyframes greeting {
+//  from {
+//    transform: translate(0,5%)rotate(2deg);
+//  }
+//
+//  to{
+//    transform: translate(32%,10%)scale(1.1)rotate(0deg);
+//  }
+//}
+//.greeting {
+//  animation: greeting 3.5s ease-out;
+//}
 
 @keyframes greeting-1 {
   from {
@@ -411,6 +425,8 @@ h1 {
 .greeting-2 {
   animation: greeting-2 0.7s ease-in;
 }
+
+
 
 @keyframes animate3-1 {
   from{

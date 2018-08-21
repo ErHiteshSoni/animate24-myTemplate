@@ -159,10 +159,10 @@ h1 {
   //width: 100%;
   //height: 100%;
   position: absolute;
-  top:53%;
-  //top:54%;
-  //left: 0;
-  left: 10%;
+  //top:53%;
+  top:54%;
+  left: 0;
+  //left: 10%;
   font-size: 48px;
   font-weight: 600;
   color: #636669;
@@ -428,9 +428,72 @@ h1 {
   from {
     transform: translate(0,5%)skewX(-10deg)rotate(1deg);
   }
-  40%{filter: opacity(100%)}
-  60%{filter: opacity(50%)}
-  80%{filter: opacity(100%)}
+  5%{
+    transform: translate(2%,6.125%)skewX(-10deg)rotate(1deg);
+  }
+  10%{
+    transform: translate(4%,7.5%)skewX(-10deg)rotate(1deg);
+  }
+  15%{
+    transform: translate(6%,8.725%)skewX(-10deg)rotate(1deg);
+  }
+  20%{
+    transform: translate(8%,10%)skewX(-10deg)rotate(1deg);
+  }
+  25%{
+    transform: translate(10%,11.125%)skewX(-10deg)rotate(1deg);
+  }
+  30%{
+    transform: translate(12%,12.5%)skewX(-10deg)rotate(1deg);
+  }
+  35%{
+    transform: translate(14%,13.725%)skewX(-10deg)rotate(1deg);
+  }
+  40%{
+    filter: opacity(100%);
+    transform: translate(16%,15%)skewX(-10deg)rotate(1deg);
+  }
+  45%{
+    filter: opacity(87.25%);
+    transform: translate(18%,16.125%)skewX(-10deg)rotate(1deg);
+  }
+  50%{
+    filter: opacity(75%);
+    transform: translate(20%,17.5%)skewX(-10deg)rotate(1deg);
+  }
+  55%{
+    filter: opacity(67.25%);
+    transform: translate(22%,18.725%)skewX(-10deg)rotate(1deg);
+  }
+  60%{
+    filter: opacity(50%);
+    transform: translate(24%,20%)skewX(-10deg)rotate(1deg);
+  }
+  65%{
+    filter: opacity(67.25%);
+    transform: translate(26%,21.725%)skewX(-10deg)rotate(1deg);
+  }
+  70%{
+    filter: opacity(75%);
+    transform: translate(28%,22.5%)skewX(-10deg)rotate(1deg);
+  }
+  75%{
+    filter: opacity(87.25%);
+    transform: translate(30%,23.725%)skewX(-10deg)rotate(1deg);
+  }
+  80%{
+    filter: opacity(100%);
+    transform: translate(32%,25%)skewX(-10deg)rotate(1deg);
+  }
+  85%{
+    transform: translate(34%,26.25%)skewX(-10deg)rotate(1deg);
+  }
+  90%{
+    transform: translate(36%,27.5%)skewX(-7.5deg)rotate(1deg);
+  }
+  95%{
+    transform: translate(38%,28.725%)skewX(-6.25deg)rotate(1.5deg);
+  }
   to{
     transform: translate(40%,30%)scale(1.2)skewX(-5deg)rotate(2deg);
   }
@@ -440,7 +503,8 @@ h1 {
   to{transform: translate(200%,-150%)scale(7)skewX(5deg)rotate(2deg);}
 }
 .greeting-1 {
-  animation: greeting-1 2.9s cubic-bezier(.4,.85,.4,.6);
+  //animation: greeting-1 2.9s cubic-bezier(.4,.85,.4,.6);
+  animation: greeting-1 2.9s linear;
 }
 .greeting-2 {
   animation: greeting-2 0.7s ease-in;

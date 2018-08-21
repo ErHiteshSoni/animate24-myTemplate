@@ -4,8 +4,8 @@ window.HELP_IMPROVE_VIDEOJS = false;
 function VideoPlayer() {
   var videoElem = document.createElement('VIDEO');
 
-  //videoElem.setAttribute('src', './app/img/imperia_flight.mp4');
-  videoElem.setAttribute('src', './app/img/_-Main Composition_low quality.mp4');
+  videoElem.setAttribute('src', './app/img/imperia_flight.mp4');
+  //videoElem.setAttribute('src', './app/img/_-Main Composition_low quality.mp4');
   videoElem.setAttribute('class', 'video-js vjs-fluid');
   videoElem.setAttribute('webkit-playsinline', '');
   videoElem.setAttribute('playsinline', '');
@@ -90,17 +90,17 @@ VideoPlayer.prototype.init = function() {
   //To disable all seeking replace the if statements from the next
   //two functions with myPlayer.currentTime(currentTime);
 
-  self.myPlayer.on('seeking', function(event) {
-    if (currentTime < self.myPlayer.currentTime()) {
-      self.myPlayer.currentTime(currentTime);
-    }
-  });
-
-  self.myPlayer.on('seeked', function(event) {
-    if (currentTime < self.myPlayer.currentTime()) {
-      self.myPlayer.currentTime(currentTime);
-    }
-  });
+  // self.myPlayer.on('seeking', function(event) {
+  //   if (currentTime < self.myPlayer.currentTime()) {
+  //     self.myPlayer.currentTime(currentTime);
+  //   }
+  // });
+  //
+  // self.myPlayer.on('seeked', function(event) {
+  //   if (currentTime < self.myPlayer.currentTime()) {
+  //     self.myPlayer.currentTime(currentTime);
+  //   }
+  // });
   self.myPlayer.on('ended', function() {
 
     self.myPlayer.posterImage.show();
@@ -346,6 +346,20 @@ VideoPlayer.prototype.addAnimate2 = function () {
 
   animateCss += '}' +
     '.animate3{animation: animate3 5.44s linear;}';
+  animateCss += '@keyframes animate-end {' +
+    '  from {' +
+    'transform: translate('+ animation.position.percent.x[135] +'%,'+ animation.position.percent.y[135]+
+    '% )scale('+ animation.scale[135]+')rotate('+ animation.rotation[0] +'deg);'+
+    '    opacity: 1; }' +
+    '  to {' +
+    '    opacity: 0;' +
+    'transform: translate('+ animation.position.percent.x[135] +'%,'+ animation.position.percent.y[135]+
+    '% )scale('+ animation.scale[135]+')rotate('+ animation.rotation[0] +'deg);'+
+    '  }' +
+    '}' +
+    '.animate-end {' +
+    '  animation: animate-end 0.3s linear;' +
+    '}';
   var style = document.createElement("style");
   style.innerHTML = animateCss;
   $('head').append(style);

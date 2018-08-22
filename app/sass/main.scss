@@ -361,12 +361,13 @@ h1 {
     transform: translate(-27%,14%)scale(1.3);
   }
   to {
-    transform: translate(-135%,80%)scale(2.5);
     opacity: 0;
+    transform: translate(-27%,14%)scale(1.3);
+    //transform: translate(-135%,80%)scale(2.5);
   }
 }
 .animate-image3 {
-  animation: animate-image3 0.4s ease-in;
+  animation: animate-image3 0.2s ease-in;
 }
 //@keyframes greeting {
 //  from {
@@ -447,9 +448,9 @@ h1 {
   30%{
     transform: translate(19%,12.5%)skewX(-10deg)rotate(1deg);
   }
-  35%{
-    transform: translate(24%,13.725%)skewX(-10deg)rotate(1deg);
-  }
+  //35%{
+  //  transform: translate(24%,13.725%)skewX(-10deg)rotate(1deg);
+  //}
   40%{
     filter: opacity(100%);
     transform: translate(25%,15%)skewX(-10deg)rotate(1deg);
@@ -493,22 +494,24 @@ h1 {
     transform: translate(36%,27.5%)skewX(-7.5deg)rotate(1deg);
   }
   95%{
-    transform: translate(38%,28.725%)skewX(-6.25deg)rotate(1.5deg);
+    opacity: 1;
+    transform: translate(38%,28.725%)skewX(-6.25deg)rotate(1.2deg);
   }
   to{
-    transform: translate(40%,30%)skewX(-5deg)rotate(2deg);
+    transform: translate(40%,30%)skewX(-5deg)rotate(1.5deg);
+    opacity: 0;
   }
 }
 @keyframes greeting-2 {
   //from,30%{transform: translate(40%,30%)scale(1.2)skewX(-5deg)rotate(2deg);}
   //to{transform: translate(200%,-150%)scale(7)skewX(5deg)rotate(2deg);}
-  from,30%{
+  from{
     opacity: 1;
-    transform: translate(40%,30%)scale(1)skewX(-5deg)rotate(2deg);
+    transform: translate(40%,30%)skewX(-5deg)rotate(1.5deg);
   }
   to{
     opacity: 0;
-    transform: translate(40%,30%)scale(1)skewX(-5deg)rotate(2deg);
+    transform: translate(40%,30%)skewX(-5deg)rotate(1.5deg);
   }
 }
 .greeting-1 {
@@ -516,74 +519,74 @@ h1 {
   animation: greeting-1 2.9s linear;
 }
 .greeting-2 {
-  animation: greeting-2 0.7s ease-in;
+  animation: greeting-2 0.3s ease-in;
 }
 
 
 
-@keyframes animate3-1 {
-  from{
-    transform: translate(-35%,60%);
-    filter: blur(5px);
-  }
-
-  to{
-    transform: translate(5%,2%);
-    filter: blur(0);
-  }
-}
-
-@keyframes animate3-2{
-  from{transform: translate(5%,2%);}
-  to{transform: translate(3%,-30%);}
-}
-
-@keyframes animate3-3{
-  from{transform: translate(3%,-30%);}
-  to{transform: translate(-7%,40%);}
-}
-
-@keyframes animate3-4{
-  from{transform: translate(-7%,40%);}
-  to{transform: translate(-10%,110%);}
-}
-
-@keyframes animate3-5{
-  from{transform: translate(-10%,110%);}
-  to{transform: translate(5%,110%);}
-}
-
-@keyframes animate3-6{
-  from{transform: translate(5%,110%);}
-  to{transform: translate(2%,183%);}
-}
-
-@keyframes animate3-7{
-  from{transform: translate(2%,183%);}
-  to{transform: translate(0%,350%)scale(2);}
-}
-
-.animate3-1 {
-  animation: animate3-1 1.05s ease-out;
-}
-.animate3-2 {
-  animation:animate3-2 0.65s ease-out;
-}
-.animate3-3 {
-  animation: animate3-3 1.73s linear;
-}
-.animate3-4 {
-  animation: animate3-4 0.75s linear;
-}
-.animate3-5 {
-  animation: animate3-5 0.2s linear;
-}
-.animate3-6 {
-  animation:animate3-6 1s linear;
-}
-.animate3-7 {
-  animation:animate3-7 0.45s ease-in;
-}
+//@keyframes animate3-1 {
+//  from{
+//    transform: translate(-35%,60%);
+//    filter: blur(5px);
+//  }
+//
+//  to{
+//    transform: translate(5%,2%);
+//    filter: blur(0);
+//  }
+//}
+//
+//@keyframes animate3-2{
+//  from{transform: translate(5%,2%);}
+//  to{transform: translate(3%,-30%);}
+//}
+//
+//@keyframes animate3-3{
+//  from{transform: translate(3%,-30%);}
+//  to{transform: translate(-7%,40%);}
+//}
+//
+//@keyframes animate3-4{
+//  from{transform: translate(-7%,40%);}
+//  to{transform: translate(-10%,110%);}
+//}
+//
+//@keyframes animate3-5{
+//  from{transform: translate(-10%,110%);}
+//  to{transform: translate(5%,110%);}
+//}
+//
+//@keyframes animate3-6{
+//  from{transform: translate(5%,110%);}
+//  to{transform: translate(2%,183%);}
+//}
+//
+//@keyframes animate3-7{
+//  from{transform: translate(2%,183%);}
+//  to{transform: translate(0%,350%)scale(2);}
+//}
+//
+//.animate3-1 {
+//  animation: animate3-1 1.05s ease-out;
+//}
+//.animate3-2 {
+//  animation:animate3-2 0.65s ease-out;
+//}
+//.animate3-3 {
+//  animation: animate3-3 1.73s linear;
+//}
+//.animate3-4 {
+//  animation: animate3-4 0.75s linear;
+//}
+//.animate3-5 {
+//  animation: animate3-5 0.2s linear;
+//}
+//.animate3-6 {
+//  animation:animate3-6 1s linear;
+//}
+//.animate3-7 {
+//  animation:animate3-7 0.45s ease-in;
+//}
 
 
 //@keyframes animate-end {

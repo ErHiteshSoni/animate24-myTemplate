@@ -150,8 +150,6 @@ h1 {
   font-weight: 600;
   color: #636669;
   letter-spacing: 5px; }
-  #greeting span:first-child {
-    font-size: 40px; }
 
 #animate2 {
   display: -webkit-box;
@@ -196,7 +194,8 @@ h1 {
 
 #photoName {
   color: #515053;
-  font-size: 20px;
+  font-size: 26px;
+  font-weight: 600;
   letter-spacing: 1.5px; }
 
 #name {
@@ -214,8 +213,6 @@ h1 {
     top: 55%;
     letter-spacing: 3px;
     font-size: 4vw; }
-    #greeting span:first-child {
-      font-size: 3vw; }
   #photoName {
     font-size: 2.3vw; }
   #name {
@@ -481,15 +478,9 @@ h1 {
   10% {
     -webkit-transform: translate(6%, 7.5%) skewX(-10deg) rotate(1deg);
             transform: translate(6%, 7.5%) skewX(-10deg) rotate(1deg); }
-  15% {
-    -webkit-transform: translate(9%, 8.725%) skewX(-10deg) rotate(1deg);
-            transform: translate(9%, 8.725%) skewX(-10deg) rotate(1deg); }
   20% {
     -webkit-transform: translate(14%, 10%) skewX(-10deg) rotate(1deg);
             transform: translate(14%, 10%) skewX(-10deg) rotate(1deg); }
-  25% {
-    -webkit-transform: translate(17%, 11.125%) skewX(-10deg) rotate(1deg);
-            transform: translate(17%, 11.125%) skewX(-10deg) rotate(1deg); }
   30% {
     -webkit-transform: translate(19%, 12.5%) skewX(-10deg) rotate(1deg);
             transform: translate(19%, 12.5%) skewX(-10deg) rotate(1deg); }
@@ -501,11 +492,6 @@ h1 {
             filter: opacity(100%);
     -webkit-transform: translate(25%, 15%) skewX(-10deg) rotate(1deg);
             transform: translate(25%, 15%) skewX(-10deg) rotate(1deg); }
-  45% {
-    -webkit-filter: opacity(87.25%);
-            filter: opacity(87.25%);
-    -webkit-transform: translate(27%, 16.125%) skewX(-10deg) rotate(1deg);
-            transform: translate(27%, 16.125%) skewX(-10deg) rotate(1deg); }
   50% {
     -webkit-filter: opacity(75%);
             filter: opacity(75%);
@@ -551,8 +537,8 @@ h1 {
     -webkit-transform: translate(38%, 28.725%) skewX(-6.25deg) rotate(1.5deg);
             transform: translate(38%, 28.725%) skewX(-6.25deg) rotate(1.5deg); }
   to {
-    -webkit-transform: translate(40%, 30%) scale(1.1) skewX(-5deg) rotate(2deg);
-            transform: translate(40%, 30%) scale(1.1) skewX(-5deg) rotate(2deg); } }
+    -webkit-transform: translate(40%, 30%) skewX(-5deg) rotate(2deg);
+            transform: translate(40%, 30%) skewX(-5deg) rotate(2deg); } }
 
 @keyframes greeting-1 {
   from {
@@ -564,15 +550,9 @@ h1 {
   10% {
     -webkit-transform: translate(6%, 7.5%) skewX(-10deg) rotate(1deg);
             transform: translate(6%, 7.5%) skewX(-10deg) rotate(1deg); }
-  15% {
-    -webkit-transform: translate(9%, 8.725%) skewX(-10deg) rotate(1deg);
-            transform: translate(9%, 8.725%) skewX(-10deg) rotate(1deg); }
   20% {
     -webkit-transform: translate(14%, 10%) skewX(-10deg) rotate(1deg);
             transform: translate(14%, 10%) skewX(-10deg) rotate(1deg); }
-  25% {
-    -webkit-transform: translate(17%, 11.125%) skewX(-10deg) rotate(1deg);
-            transform: translate(17%, 11.125%) skewX(-10deg) rotate(1deg); }
   30% {
     -webkit-transform: translate(19%, 12.5%) skewX(-10deg) rotate(1deg);
             transform: translate(19%, 12.5%) skewX(-10deg) rotate(1deg); }
@@ -584,11 +564,6 @@ h1 {
             filter: opacity(100%);
     -webkit-transform: translate(25%, 15%) skewX(-10deg) rotate(1deg);
             transform: translate(25%, 15%) skewX(-10deg) rotate(1deg); }
-  45% {
-    -webkit-filter: opacity(87.25%);
-            filter: opacity(87.25%);
-    -webkit-transform: translate(27%, 16.125%) skewX(-10deg) rotate(1deg);
-            transform: translate(27%, 16.125%) skewX(-10deg) rotate(1deg); }
   50% {
     -webkit-filter: opacity(75%);
             filter: opacity(75%);
@@ -634,28 +609,28 @@ h1 {
     -webkit-transform: translate(38%, 28.725%) skewX(-6.25deg) rotate(1.5deg);
             transform: translate(38%, 28.725%) skewX(-6.25deg) rotate(1.5deg); }
   to {
-    -webkit-transform: translate(40%, 30%) scale(1.1) skewX(-5deg) rotate(2deg);
-            transform: translate(40%, 30%) scale(1.1) skewX(-5deg) rotate(2deg); } }
+    -webkit-transform: translate(40%, 30%) skewX(-5deg) rotate(2deg);
+            transform: translate(40%, 30%) skewX(-5deg) rotate(2deg); } }
 
 @-webkit-keyframes greeting-2 {
   from, 30% {
     opacity: 1;
-    -webkit-transform: translate(40%, 30%) scale(1.2) skewX(-5deg) rotate(2deg);
-            transform: translate(40%, 30%) scale(1.2) skewX(-5deg) rotate(2deg); }
+    -webkit-transform: translate(40%, 30%) scale(1) skewX(-5deg) rotate(2deg);
+            transform: translate(40%, 30%) scale(1) skewX(-5deg) rotate(2deg); }
   to {
     opacity: 0;
-    -webkit-transform: translate(40%, 30%) scale(1.2) skewX(-5deg) rotate(2deg);
-            transform: translate(40%, 30%) scale(1.2) skewX(-5deg) rotate(2deg); } }
+    -webkit-transform: translate(40%, 30%) scale(1) skewX(-5deg) rotate(2deg);
+            transform: translate(40%, 30%) scale(1) skewX(-5deg) rotate(2deg); } }
 
 @keyframes greeting-2 {
   from, 30% {
     opacity: 1;
-    -webkit-transform: translate(40%, 30%) scale(1.2) skewX(-5deg) rotate(2deg);
-            transform: translate(40%, 30%) scale(1.2) skewX(-5deg) rotate(2deg); }
+    -webkit-transform: translate(40%, 30%) scale(1) skewX(-5deg) rotate(2deg);
+            transform: translate(40%, 30%) scale(1) skewX(-5deg) rotate(2deg); }
   to {
     opacity: 0;
-    -webkit-transform: translate(40%, 30%) scale(1.2) skewX(-5deg) rotate(2deg);
-            transform: translate(40%, 30%) scale(1.2) skewX(-5deg) rotate(2deg); } }
+    -webkit-transform: translate(40%, 30%) scale(1) skewX(-5deg) rotate(2deg);
+            transform: translate(40%, 30%) scale(1) skewX(-5deg) rotate(2deg); } }
 
 .greeting-1 {
   -webkit-animation: greeting-1 2.9s linear;
